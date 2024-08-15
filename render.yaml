@@ -1,12 +1,12 @@
 databases:
-  - name: twitter-app
-    databaseName: twitter-app
-    user: twitter-app
+  - name: twitterapp
+    databaseName: twitterapp
+    user: twitterapp
     plan: free
 
 services:
   - type: web
-    name: twitter-app
+    name: twitterapp
     runtime: ruby
     plan: free
     buildCommand: "./bin/render-build.sh"
