@@ -13,6 +13,9 @@ class TwittersController < ApplicationController
   def preview
   end
 
+  def search
+  end
+
   # GET /twitters/new
   def new
     @twitter = Twitter.new
