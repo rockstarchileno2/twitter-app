@@ -1,8 +1,14 @@
 <p style="color: green"><%= notice %></p>
 
-<h1>Twitters</h1>
-
+<h1>Twitter</h1>
+<br>
 <div id="twitters">
+
+<%= form_with url: twitters_path, method: :get do |form|%>
+ <%= form.text_field :query_text, placeholder: "Buscar tweet", value: params[:query_text],class: "form-control"%>
+<%end%>
+<br>
+
   <% @twitters.each do |twitter| %>
     <%= render twitter %>
     <p>
